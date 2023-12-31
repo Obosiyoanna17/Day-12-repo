@@ -1,0 +1,130 @@
+/* Reset default margin, padding, and box-sizing for all elements */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 100vh;
+    /* Ensure the body takes at least the full viewpot height */
+    background: linear-gradient(#d5a3ff 0%, #77a5f8 100%);
+    /* Set background colour */
+ }
+
+ /* Style for the form container */
+ form {
+    padding: 25px;
+    background-color: #ecf0f1;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    color: #141517;
+ }
+
+ /* Heading style within the form */
+ form h2 {
+    font-size: 27px;
+    text-align: center;
+    margin: 0px 0 30px;
+    color: blueviolet;
+ }
+
+ /* Style for form groups (input and label pairs) */
+ form .form-group {
+    margin-bottom: 15px;
+    position: relative;
+ }
+
+ /* Style for form labels */
+ form label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 7px;
+ }
+
+ /* Style for form inputs and select */
+ form input,
+ form select {
+    height: 45px;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+    border-radius: 20px;
+    border: 3px solid #0367fd;
+ }
+
+ /* Style for focused form inputs and selects */
+ form input:focus,
+ form select:focus {
+    border-color: #9a9a9a;
+ }
+
+ /* Style for error state in form inputs and select */
+ form input.error,
+ form select.error {
+    border-color: #f91919;
+    background: #f9f0f1;
+ }
+
+ /* Style for error messages in the form */
+ form small {
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+    color: #f91919;
+ }
+
+ /* Style for the password toggle icon */
+ form .password i {
+    position: absolute;
+    right: 0px;
+    height: 45px;
+    top: 28px;
+    font-size: 13px;
+    line-height: 45px;
+    width: 45px;
+    cursor: pointer;
+    color: #939393;
+    text-align: center;
+ }
+
+ /* Style for the submit button section */
+ .submit-btn {
+    margin-top: 30px;
+    text-align: center;
+ }
+
+ /* Style for the submit button  */
+ .submit-btn input {
+    color: #ffffff;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #202020;
+    transition: background 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+ }
+ 
+/* Style for the submit button hover */
+.submit-btn input:hover {
+    background: blue;
+}
+
+/* Style for the submit button when clicked */
+.submit-btn input:active {
+    transform: scale(0.95);
+}
